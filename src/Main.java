@@ -11,11 +11,11 @@ public class Main {
         System.out.println("Имя аккаунта: " + name + ". Максимальное количество аккаунтов: " + maxAccount);
 
         Client client1 = new Client(name, maxAccount);
-        //Account account = new accounts.CheckingAccount("Расчётный счёт", 200);
-        //client1.add(account);
+        Account account = new accounts.CheckingAccount("Расчётный счёт", 200);
+        client1.add(account);
 
-        //Account account1 = new accounts.SavingsAccount("Накопительный счёт", 100, 150);
-        //client1.add(account1);
+        Account account1 = new accounts.SavingsAccount("Накопительный счёт", 100, 150);
+        client1.add(account1);
 
         Account account2 = new accounts.CreditAccount("Кредитный счёт", 0);
         client1.add(account2);
